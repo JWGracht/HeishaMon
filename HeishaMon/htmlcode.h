@@ -118,7 +118,7 @@ static const char settingsJS[] PROGMEM =
   "    }"
   "</script>";
 
-/*static const char heatingCurveJS[] PROGMEM =
+static const char heatingCurveJS[] PROGMEM =
   "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>"
   "<script>"
   " $( document ).ready(function() {"
@@ -154,13 +154,14 @@ static const char settingsJS[] PROGMEM =
   "    }"
   "    $(\"#heatcurvevalues\").html(tableHTML);"
   " }"
-  "</script>";*/
+  "</script>";
 
 static const char webBodyRoot1[] PROGMEM =
   "<div class=\"w3-sidebar w3-bar-block w3-card w3-animate-left\" style=\"display:none\" id=\"leftMenu\">"
   "<a href=\"/reboot\" class=\"w3-bar-item w3-button\">Reboot</a>"
   "<a href=\"/firmware\" class=\"w3-bar-item w3-button\">Firmware</a>"
   "<a href=\"/settings\" class=\"w3-bar-item w3-button\">Settings</a>"
+  "<a href=\"/smartcontrol\" class=\"w3-bar-item w3-button\">Smart Control</a>"
   "<a href=\"/togglelog\" class=\"w3-bar-item w3-button\">Toggle mqtt log</a>"
   "<a href=\"/togglehexdump\" class=\"w3-bar-item w3-button\">Toggle hexdump log</a>"
   "<hr><div class=\"w3-text-grey\">Version: ";
@@ -249,6 +250,7 @@ static const char webBodySettings1[] PROGMEM =
   "<div class=\"w3-sidebar w3-bar-block w3-card w3-animate-left\" style=\"display:none\" id=\"leftMenu\">"
   "<a href=\"/\" class=\"w3-bar-item w3-button\">Home</a>"
   "<a href=\"/reboot\" class=\"w3-bar-item w3-button\">Reboot</a>"
+  "<a href=\"/smartcontrol\" class=\"w3-bar-item w3-button\">Smart Control</a>"
   "<a href=\"/firmware\" class=\"w3-bar-item w3-button\">Firmware</a>"
   "<a href=\"/togglelog\" class=\"w3-bar-item w3-button\">Toggle mqtt log</a>"
   "<a href=\"/togglehexdump\" class=\"w3-bar-item w3-button\">Toggle hexdump log</a>"

@@ -1009,7 +1009,7 @@ void handleSmartcontrol(ESP8266WebServer *httpServer, settingsStruct *heishamonS
 
   httpServer->sendContent_P(menuJS);
   httpServer->sendContent_P(selectJS);
-  // httpServer->sendContent_P(heatingCurveJS);
+  httpServer->sendContent_P(heatingCurveJS);
   httpServer->sendContent_P(webFooter);
   httpServer->sendContent("");
   httpServer->client().stop();
