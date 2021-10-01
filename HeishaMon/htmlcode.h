@@ -124,6 +124,7 @@ static const char heatingCurveJS[] PROGMEM =
   " $( document ).ready(function() {"
   "    $('#hcoh,#hcol,#hcth,#hctl').change(ChangeHeatingCurve);"
   "    ChangeHeatingCurve();"
+  "    openTable('heatingcurve');"
   " });"
   " function ChangeHeatingCurve(){"
   "    var inputHcthValue = $('#hcth').val();"
